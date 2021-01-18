@@ -1,315 +1,306 @@
 {
   "mongoose": {
     "client": {
-      "url": "F:\\mygit\\monitor\\config\\config.default.js",
-      "options": "F:\\mygit\\monitor\\config\\config.default.js"
+      "url": "/root/monitor/config/config.default.js",
+      "options": "/root/monitor/config/config.default.js"
     },
-    "url": "F:\\mygit\\monitor\\node_modules\\egg-mongoose\\config\\config.default.js",
-    "options": "F:\\mygit\\monitor\\node_modules\\egg-mongoose\\config\\config.default.js",
-    "plugins": "F:\\mygit\\monitor\\node_modules\\egg-mongoose\\config\\config.default.js",
-    "loadModel": "F:\\mygit\\monitor\\node_modules\\egg-mongoose\\config\\config.default.js",
-    "app": "F:\\mygit\\monitor\\node_modules\\egg-mongoose\\config\\config.default.js",
-    "agent": "F:\\mygit\\monitor\\node_modules\\egg-mongoose\\config\\config.default.js"
+    "url": "/root/monitor/node_modules/egg-mongoose/config/config.default.js",
+    "options": "/root/monitor/node_modules/egg-mongoose/config/config.default.js",
+    "plugins": "/root/monitor/node_modules/egg-mongoose/config/config.default.js",
+    "loadModel": "/root/monitor/node_modules/egg-mongoose/config/config.default.js",
+    "app": "/root/monitor/node_modules/egg-mongoose/config/config.default.js",
+    "agent": "/root/monitor/node_modules/egg-mongoose/config/config.default.js"
   },
   "security": {
     "csrf": {
-      "enable": "F:\\mygit\\monitor\\config\\config.default.js",
-      "type": "F:\\mygit\\monitor\\node_modules\\egg-security\\config\\config.default.js",
-      "ignoreJSON": "F:\\mygit\\monitor\\node_modules\\egg-security\\config\\config.default.js",
-      "useSession": "F:\\mygit\\monitor\\node_modules\\egg-security\\config\\config.default.js",
-      "cookieName": "F:\\mygit\\monitor\\node_modules\\egg-security\\config\\config.default.js",
-      "sessionName": "F:\\mygit\\monitor\\node_modules\\egg-security\\config\\config.default.js",
-      "headerName": "F:\\mygit\\monitor\\node_modules\\egg-security\\config\\config.default.js",
-      "bodyName": "F:\\mygit\\monitor\\node_modules\\egg-security\\config\\config.default.js",
-      "queryName": "F:\\mygit\\monitor\\node_modules\\egg-security\\config\\config.default.js",
-      "refererWhiteList": "F:\\mygit\\monitor\\node_modules\\egg-security\\config\\config.default.js"
+      "enable": "/root/monitor/config/config.default.js",
+      "type": "/root/monitor/node_modules/egg-security/config/config.default.js",
+      "ignoreJSON": "/root/monitor/node_modules/egg-security/config/config.default.js",
+      "useSession": "/root/monitor/node_modules/egg-security/config/config.default.js",
+      "cookieName": "/root/monitor/node_modules/egg-security/config/config.default.js",
+      "sessionName": "/root/monitor/node_modules/egg-security/config/config.default.js",
+      "headerName": "/root/monitor/node_modules/egg-security/config/config.default.js",
+      "bodyName": "/root/monitor/node_modules/egg-security/config/config.default.js",
+      "queryName": "/root/monitor/node_modules/egg-security/config/config.default.js",
+      "refererWhiteList": "/root/monitor/node_modules/egg-security/config/config.default.js"
     },
-    "domainWhiteList": "F:\\mygit\\monitor\\config\\config.default.js",
-    "protocolWhiteList": "F:\\mygit\\monitor\\node_modules\\egg-security\\config\\config.default.js",
-    "defaultMiddleware": "F:\\mygit\\monitor\\node_modules\\egg-security\\config\\config.default.js",
+    "domainWhiteList": "/root/monitor/config/config.default.js",
+    "protocolWhiteList": "/root/monitor/node_modules/egg-security/config/config.default.js",
+    "defaultMiddleware": "/root/monitor/node_modules/egg-security/config/config.default.js",
     "xframe": {
-      "enable": "F:\\mygit\\monitor\\node_modules\\egg-security\\config\\config.default.js",
-      "value": "F:\\mygit\\monitor\\node_modules\\egg-security\\config\\config.default.js"
+      "enable": "/root/monitor/node_modules/egg-security/config/config.default.js",
+      "value": "/root/monitor/node_modules/egg-security/config/config.default.js"
     },
     "hsts": {
-      "enable": "F:\\mygit\\monitor\\node_modules\\egg-security\\config\\config.local.js",
-      "maxAge": "F:\\mygit\\monitor\\node_modules\\egg-security\\config\\config.default.js",
-      "includeSubdomains": "F:\\mygit\\monitor\\node_modules\\egg-security\\config\\config.default.js"
+      "enable": "/root/monitor/node_modules/egg-security/config/config.default.js",
+      "maxAge": "/root/monitor/node_modules/egg-security/config/config.default.js",
+      "includeSubdomains": "/root/monitor/node_modules/egg-security/config/config.default.js"
     },
     "dta": {
-      "enable": "F:\\mygit\\monitor\\node_modules\\egg-security\\config\\config.default.js"
+      "enable": "/root/monitor/node_modules/egg-security/config/config.default.js"
     },
     "methodnoallow": {
-      "enable": "F:\\mygit\\monitor\\node_modules\\egg-security\\config\\config.default.js"
+      "enable": "/root/monitor/node_modules/egg-security/config/config.default.js"
     },
     "noopen": {
-      "enable": "F:\\mygit\\monitor\\node_modules\\egg-security\\config\\config.default.js"
+      "enable": "/root/monitor/node_modules/egg-security/config/config.default.js"
     },
     "nosniff": {
-      "enable": "F:\\mygit\\monitor\\node_modules\\egg-security\\config\\config.default.js"
+      "enable": "/root/monitor/node_modules/egg-security/config/config.default.js"
     },
     "referrerPolicy": {
-      "enable": "F:\\mygit\\monitor\\node_modules\\egg-security\\config\\config.default.js",
-      "value": "F:\\mygit\\monitor\\node_modules\\egg-security\\config\\config.default.js"
+      "enable": "/root/monitor/node_modules/egg-security/config/config.default.js",
+      "value": "/root/monitor/node_modules/egg-security/config/config.default.js"
     },
     "xssProtection": {
-      "enable": "F:\\mygit\\monitor\\node_modules\\egg-security\\config\\config.default.js",
-      "value": "F:\\mygit\\monitor\\node_modules\\egg-security\\config\\config.default.js"
+      "enable": "/root/monitor/node_modules/egg-security/config/config.default.js",
+      "value": "/root/monitor/node_modules/egg-security/config/config.default.js"
     },
     "csp": {
-      "enable": "F:\\mygit\\monitor\\node_modules\\egg-security\\config\\config.default.js",
-      "policy": "F:\\mygit\\monitor\\node_modules\\egg-security\\config\\config.default.js"
+      "enable": "/root/monitor/node_modules/egg-security/config/config.default.js",
+      "policy": "/root/monitor/node_modules/egg-security/config/config.default.js"
     },
     "ssrf": {
-      "ipBlackList": "F:\\mygit\\monitor\\node_modules\\egg-security\\config\\config.default.js",
-      "checkAddress": "F:\\mygit\\monitor\\node_modules\\egg-security\\config\\config.default.js"
+      "ipBlackList": "/root/monitor/node_modules/egg-security/config/config.default.js",
+      "checkAddress": "/root/monitor/node_modules/egg-security/config/config.default.js"
     }
   },
   "cors": {
-    "origin": "F:\\mygit\\monitor\\config\\config.default.js",
-    "allowMethods": "F:\\mygit\\monitor\\config\\config.default.js"
+    "origin": "/root/monitor/config/config.default.js",
+    "allowMethods": "/root/monitor/config/config.default.js"
   },
-  "keys": "F:\\mygit\\monitor\\config\\config.default.js",
-  "middleware": "F:\\mygit\\monitor\\config\\config.default.js",
+  "keys": "/root/monitor/config/config.default.js",
+  "middleware": "/root/monitor/config/config.default.js",
   "session": {
-    "maxAge": "F:\\mygit\\monitor\\node_modules\\egg-session\\config\\config.default.js",
-    "key": "F:\\mygit\\monitor\\node_modules\\egg-session\\config\\config.default.js",
-    "httpOnly": "F:\\mygit\\monitor\\node_modules\\egg-session\\config\\config.default.js",
-    "encrypt": "F:\\mygit\\monitor\\node_modules\\egg-session\\config\\config.default.js"
+    "maxAge": "/root/monitor/node_modules/egg-session/config/config.default.js",
+    "key": "/root/monitor/node_modules/egg-session/config/config.default.js",
+    "httpOnly": "/root/monitor/node_modules/egg-session/config/config.default.js",
+    "encrypt": "/root/monitor/node_modules/egg-session/config/config.default.js"
   },
   "helper": {
-    "shtml": "F:\\mygit\\monitor\\node_modules\\egg-security\\config\\config.default.js"
+    "shtml": "/root/monitor/node_modules/egg-security/config/config.default.js"
   },
   "jsonp": {
-    "limit": "F:\\mygit\\monitor\\node_modules\\egg-jsonp\\config\\config.default.js",
-    "callback": "F:\\mygit\\monitor\\node_modules\\egg-jsonp\\config\\config.default.js",
-    "csrf": "F:\\mygit\\monitor\\node_modules\\egg-jsonp\\config\\config.default.js"
+    "limit": "/root/monitor/node_modules/egg-jsonp/config/config.default.js",
+    "callback": "/root/monitor/node_modules/egg-jsonp/config/config.default.js",
+    "csrf": "/root/monitor/node_modules/egg-jsonp/config/config.default.js"
   },
   "onerror": {
-    "errorPageUrl": "F:\\mygit\\monitor\\node_modules\\egg-onerror\\config\\config.default.js",
-    "appErrorFilter": "F:\\mygit\\monitor\\node_modules\\egg-onerror\\config\\config.default.js",
-    "templatePath": "F:\\mygit\\monitor\\node_modules\\egg-onerror\\config\\config.default.js"
+    "errorPageUrl": "/root/monitor/node_modules/egg-onerror/config/config.default.js",
+    "appErrorFilter": "/root/monitor/node_modules/egg-onerror/config/config.default.js",
+    "templatePath": "/root/monitor/node_modules/egg-onerror/config/config.default.js"
   },
   "i18n": {
-    "defaultLocale": "F:\\mygit\\monitor\\node_modules\\egg-i18n\\config\\config.default.js",
-    "dirs": "F:\\mygit\\monitor\\node_modules\\egg-i18n\\config\\config.default.js",
-    "queryField": "F:\\mygit\\monitor\\node_modules\\egg-i18n\\config\\config.default.js",
-    "cookieField": "F:\\mygit\\monitor\\node_modules\\egg-i18n\\config\\config.default.js",
-    "cookieDomain": "F:\\mygit\\monitor\\node_modules\\egg-i18n\\config\\config.default.js",
-    "cookieMaxAge": "F:\\mygit\\monitor\\node_modules\\egg-i18n\\config\\config.default.js"
+    "defaultLocale": "/root/monitor/node_modules/egg-i18n/config/config.default.js",
+    "dirs": "/root/monitor/node_modules/egg-i18n/config/config.default.js",
+    "queryField": "/root/monitor/node_modules/egg-i18n/config/config.default.js",
+    "cookieField": "/root/monitor/node_modules/egg-i18n/config/config.default.js",
+    "cookieDomain": "/root/monitor/node_modules/egg-i18n/config/config.default.js",
+    "cookieMaxAge": "/root/monitor/node_modules/egg-i18n/config/config.default.js"
   },
   "watcher": {
-    "type": "F:\\mygit\\monitor\\node_modules\\egg-watcher\\config\\config.local.js",
+    "type": "/root/monitor/node_modules/egg-watcher/config/config.default.js",
     "eventSources": {
-      "default": "F:\\mygit\\monitor\\node_modules\\egg-watcher\\config\\config.default.js",
-      "development": "F:\\mygit\\monitor\\node_modules\\egg-watcher\\config\\config.default.js"
+      "default": "/root/monitor/node_modules/egg-watcher/config/config.default.js",
+      "development": "/root/monitor/node_modules/egg-watcher/config/config.default.js"
     }
   },
   "customLogger": {
     "scheduleLogger": {
-      "consoleLevel": "F:\\mygit\\monitor\\node_modules\\egg-schedule\\config\\config.default.js",
-      "file": "F:\\mygit\\monitor\\node_modules\\egg-schedule\\config\\config.default.js"
+      "consoleLevel": "/root/monitor/node_modules/egg-schedule/config/config.default.js",
+      "file": "/root/monitor/node_modules/egg-schedule/config/config.default.js"
     }
   },
   "schedule": {
-    "directory": "F:\\mygit\\monitor\\node_modules\\egg-schedule\\config\\config.default.js"
+    "directory": "/root/monitor/node_modules/egg-schedule/config/config.default.js"
   },
   "multipart": {
-    "mode": "F:\\mygit\\monitor\\node_modules\\egg-multipart\\config\\config.default.js",
-    "autoFields": "F:\\mygit\\monitor\\node_modules\\egg-multipart\\config\\config.default.js",
-    "defaultCharset": "F:\\mygit\\monitor\\node_modules\\egg-multipart\\config\\config.default.js",
-    "fieldNameSize": "F:\\mygit\\monitor\\node_modules\\egg-multipart\\config\\config.default.js",
-    "fieldSize": "F:\\mygit\\monitor\\node_modules\\egg-multipart\\config\\config.default.js",
-    "fields": "F:\\mygit\\monitor\\node_modules\\egg-multipart\\config\\config.default.js",
-    "fileSize": "F:\\mygit\\monitor\\node_modules\\egg-multipart\\config\\config.default.js",
-    "files": "F:\\mygit\\monitor\\node_modules\\egg-multipart\\config\\config.default.js",
-    "fileExtensions": "F:\\mygit\\monitor\\node_modules\\egg-multipart\\config\\config.default.js",
-    "whitelist": "F:\\mygit\\monitor\\node_modules\\egg-multipart\\config\\config.default.js",
-    "tmpdir": "F:\\mygit\\monitor\\node_modules\\egg-multipart\\config\\config.default.js",
+    "mode": "/root/monitor/node_modules/egg-multipart/config/config.default.js",
+    "autoFields": "/root/monitor/node_modules/egg-multipart/config/config.default.js",
+    "defaultCharset": "/root/monitor/node_modules/egg-multipart/config/config.default.js",
+    "fieldNameSize": "/root/monitor/node_modules/egg-multipart/config/config.default.js",
+    "fieldSize": "/root/monitor/node_modules/egg-multipart/config/config.default.js",
+    "fields": "/root/monitor/node_modules/egg-multipart/config/config.default.js",
+    "fileSize": "/root/monitor/node_modules/egg-multipart/config/config.default.js",
+    "files": "/root/monitor/node_modules/egg-multipart/config/config.default.js",
+    "fileExtensions": "/root/monitor/node_modules/egg-multipart/config/config.default.js",
+    "whitelist": "/root/monitor/node_modules/egg-multipart/config/config.default.js",
+    "tmpdir": "/root/monitor/node_modules/egg-multipart/config/config.default.js",
     "cleanSchedule": {
-      "cron": "F:\\mygit\\monitor\\node_modules\\egg-multipart\\config\\config.default.js"
+      "cron": "/root/monitor/node_modules/egg-multipart/config/config.default.js"
     }
   },
-  "development": {
-    "watchDirs": "F:\\mygit\\monitor\\node_modules\\egg-development\\config\\config.default.js",
-    "ignoreDirs": "F:\\mygit\\monitor\\node_modules\\egg-development\\config\\config.default.js",
-    "fastReady": "F:\\mygit\\monitor\\node_modules\\egg-development\\config\\config.default.js",
-    "reloadOnDebug": "F:\\mygit\\monitor\\node_modules\\egg-development\\config\\config.default.js",
-    "overrideDefault": "F:\\mygit\\monitor\\node_modules\\egg-development\\config\\config.default.js",
-    "overrideIgnore": "F:\\mygit\\monitor\\node_modules\\egg-development\\config\\config.default.js"
-  },
   "logrotator": {
-    "filesRotateByHour": "F:\\mygit\\monitor\\node_modules\\egg-logrotator\\config\\config.default.js",
-    "hourDelimiter": "F:\\mygit\\monitor\\node_modules\\egg-logrotator\\config\\config.default.js",
-    "filesRotateBySize": "F:\\mygit\\monitor\\node_modules\\egg-logrotator\\config\\config.default.js",
-    "maxFileSize": "F:\\mygit\\monitor\\node_modules\\egg-logrotator\\config\\config.default.js",
-    "maxFiles": "F:\\mygit\\monitor\\node_modules\\egg-logrotator\\config\\config.default.js",
-    "rotateDuration": "F:\\mygit\\monitor\\node_modules\\egg-logrotator\\config\\config.default.js",
-    "maxDays": "F:\\mygit\\monitor\\node_modules\\egg-logrotator\\config\\config.default.js"
+    "filesRotateByHour": "/root/monitor/node_modules/egg-logrotator/config/config.default.js",
+    "hourDelimiter": "/root/monitor/node_modules/egg-logrotator/config/config.default.js",
+    "filesRotateBySize": "/root/monitor/node_modules/egg-logrotator/config/config.default.js",
+    "maxFileSize": "/root/monitor/node_modules/egg-logrotator/config/config.default.js",
+    "maxFiles": "/root/monitor/node_modules/egg-logrotator/config/config.default.js",
+    "rotateDuration": "/root/monitor/node_modules/egg-logrotator/config/config.default.js",
+    "maxDays": "/root/monitor/node_modules/egg-logrotator/config/config.default.js"
   },
   "static": {
-    "prefix": "F:\\mygit\\monitor\\node_modules\\egg-static\\config\\config.default.js",
-    "dir": "F:\\mygit\\monitor\\node_modules\\egg-static\\config\\config.default.js",
-    "dynamic": "F:\\mygit\\monitor\\node_modules\\egg-static\\config\\config.default.js",
-    "preload": "F:\\mygit\\monitor\\node_modules\\egg-static\\config\\config.default.js",
-    "buffer": "F:\\mygit\\monitor\\node_modules\\egg-static\\config\\config.default.js",
-    "maxFiles": "F:\\mygit\\monitor\\node_modules\\egg-static\\config\\config.default.js"
+    "prefix": "/root/monitor/node_modules/egg-static/config/config.default.js",
+    "dir": "/root/monitor/node_modules/egg-static/config/config.default.js",
+    "dynamic": "/root/monitor/node_modules/egg-static/config/config.default.js",
+    "preload": "/root/monitor/node_modules/egg-static/config/config.default.js",
+    "buffer": "/root/monitor/node_modules/egg-static/config/config.prod.js",
+    "maxFiles": "/root/monitor/node_modules/egg-static/config/config.default.js",
+    "maxAge": "/root/monitor/node_modules/egg-static/config/config.prod.js"
   },
   "view": {
-    "root": "F:\\mygit\\monitor\\node_modules\\egg-view\\config\\config.default.js",
-    "cache": "F:\\mygit\\monitor\\node_modules\\egg-view\\config\\config.local.js",
-    "defaultExtension": "F:\\mygit\\monitor\\node_modules\\egg-view\\config\\config.default.js",
-    "defaultViewEngine": "F:\\mygit\\monitor\\node_modules\\egg-view\\config\\config.default.js",
-    "mapping": "F:\\mygit\\monitor\\node_modules\\egg-view\\config\\config.default.js"
+    "root": "/root/monitor/node_modules/egg-view/config/config.default.js",
+    "cache": "/root/monitor/node_modules/egg-view/config/config.default.js",
+    "defaultExtension": "/root/monitor/node_modules/egg-view/config/config.default.js",
+    "defaultViewEngine": "/root/monitor/node_modules/egg-view/config/config.default.js",
+    "mapping": "/root/monitor/node_modules/egg-view/config/config.default.js"
   },
-  "env": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
-  "name": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
-  "cookies": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
-  "proxy": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
-  "maxIpsCount": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
-  "maxProxyCount": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
-  "protocolHeaders": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
-  "ipHeaders": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
-  "hostHeaders": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
+  "env": "/root/monitor/node_modules/egg/config/config.default.js",
+  "name": "/root/monitor/node_modules/egg/config/config.default.js",
+  "cookies": "/root/monitor/node_modules/egg/config/config.default.js",
+  "proxy": "/root/monitor/node_modules/egg/config/config.default.js",
+  "maxIpsCount": "/root/monitor/node_modules/egg/config/config.default.js",
+  "maxProxyCount": "/root/monitor/node_modules/egg/config/config.default.js",
+  "protocolHeaders": "/root/monitor/node_modules/egg/config/config.default.js",
+  "ipHeaders": "/root/monitor/node_modules/egg/config/config.default.js",
+  "hostHeaders": "/root/monitor/node_modules/egg/config/config.default.js",
   "pkg": {
-    "name": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
-    "version": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
-    "description": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
-    "private": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
+    "name": "/root/monitor/node_modules/egg/config/config.default.js",
+    "version": "/root/monitor/node_modules/egg/config/config.default.js",
+    "description": "/root/monitor/node_modules/egg/config/config.default.js",
+    "private": "/root/monitor/node_modules/egg/config/config.default.js",
     "egg": {
-      "declarations": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js"
+      "declarations": "/root/monitor/node_modules/egg/config/config.default.js"
     },
     "dependencies": {
-      "egg": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
-      "axios": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
-      "egg-cors": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
-      "egg-mongoose": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
-      "egg-scripts": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
-      "error-stack-parser": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
-      "source-map": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js"
+      "egg": "/root/monitor/node_modules/egg/config/config.default.js",
+      "axios": "/root/monitor/node_modules/egg/config/config.default.js",
+      "egg-cors": "/root/monitor/node_modules/egg/config/config.default.js",
+      "egg-mongoose": "/root/monitor/node_modules/egg/config/config.default.js",
+      "egg-scripts": "/root/monitor/node_modules/egg/config/config.default.js",
+      "error-stack-parser": "/root/monitor/node_modules/egg/config/config.default.js",
+      "source-map": "/root/monitor/node_modules/egg/config/config.default.js"
     },
     "devDependencies": {
-      "autod": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
-      "autod-egg": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
-      "egg-bin": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
-      "egg-ci": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
-      "egg-mock": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
-      "eslint": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
-      "eslint-config-egg": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js"
+      "autod": "/root/monitor/node_modules/egg/config/config.default.js",
+      "autod-egg": "/root/monitor/node_modules/egg/config/config.default.js",
+      "egg-bin": "/root/monitor/node_modules/egg/config/config.default.js",
+      "egg-ci": "/root/monitor/node_modules/egg/config/config.default.js",
+      "egg-mock": "/root/monitor/node_modules/egg/config/config.default.js",
+      "eslint": "/root/monitor/node_modules/egg/config/config.default.js",
+      "eslint-config-egg": "/root/monitor/node_modules/egg/config/config.default.js"
     },
     "engines": {
-      "node": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js"
+      "node": "/root/monitor/node_modules/egg/config/config.default.js"
     },
     "scripts": {
-      "start": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
-      "stop": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
-      "dev": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
-      "debug": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
-      "test": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
-      "test-local": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
-      "cov": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
-      "lint": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
-      "ci": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
-      "autod": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js"
+      "start": "/root/monitor/node_modules/egg/config/config.default.js",
+      "stop": "/root/monitor/node_modules/egg/config/config.default.js",
+      "dev": "/root/monitor/node_modules/egg/config/config.default.js",
+      "debug": "/root/monitor/node_modules/egg/config/config.default.js",
+      "test": "/root/monitor/node_modules/egg/config/config.default.js",
+      "test-local": "/root/monitor/node_modules/egg/config/config.default.js",
+      "cov": "/root/monitor/node_modules/egg/config/config.default.js",
+      "lint": "/root/monitor/node_modules/egg/config/config.default.js",
+      "ci": "/root/monitor/node_modules/egg/config/config.default.js",
+      "autod": "/root/monitor/node_modules/egg/config/config.default.js"
     },
     "ci": {
-      "version": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js"
+      "version": "/root/monitor/node_modules/egg/config/config.default.js"
     },
     "repository": {
-      "type": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
-      "url": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js"
+      "type": "/root/monitor/node_modules/egg/config/config.default.js",
+      "url": "/root/monitor/node_modules/egg/config/config.default.js"
     },
-    "author": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
-    "license": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js"
+    "author": "/root/monitor/node_modules/egg/config/config.default.js",
+    "license": "/root/monitor/node_modules/egg/config/config.default.js"
   },
-  "baseDir": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
-  "HOME": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
-  "rundir": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
+  "baseDir": "/root/monitor/node_modules/egg/config/config.default.js",
+  "HOME": "/root/monitor/node_modules/egg/config/config.default.js",
+  "rundir": "/root/monitor/node_modules/egg/config/config.default.js",
   "dump": {
-    "ignore": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js"
+    "ignore": "/root/monitor/node_modules/egg/config/config.default.js"
   },
   "confusedConfigurations": {
-    "bodyparser": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
-    "notFound": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
-    "sitefile": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
-    "middlewares": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
-    "httpClient": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js"
+    "bodyparser": "/root/monitor/node_modules/egg/config/config.default.js",
+    "notFound": "/root/monitor/node_modules/egg/config/config.default.js",
+    "sitefile": "/root/monitor/node_modules/egg/config/config.default.js",
+    "middlewares": "/root/monitor/node_modules/egg/config/config.default.js",
+    "httpClient": "/root/monitor/node_modules/egg/config/config.default.js"
   },
   "notfound": {
-    "pageUrl": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js"
+    "pageUrl": "/root/monitor/node_modules/egg/config/config.default.js"
   },
   "siteFile": {
-    "/favicon.ico": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js"
+    "/favicon.ico": "/root/monitor/node_modules/egg/config/config.default.js"
   },
   "bodyParser": {
-    "enable": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
-    "encoding": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
-    "formLimit": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
-    "jsonLimit": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
-    "textLimit": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
-    "strict": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
+    "enable": "/root/monitor/node_modules/egg/config/config.default.js",
+    "encoding": "/root/monitor/node_modules/egg/config/config.default.js",
+    "formLimit": "/root/monitor/node_modules/egg/config/config.default.js",
+    "jsonLimit": "/root/monitor/node_modules/egg/config/config.default.js",
+    "textLimit": "/root/monitor/node_modules/egg/config/config.default.js",
+    "strict": "/root/monitor/node_modules/egg/config/config.default.js",
     "queryString": {
-      "arrayLimit": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
-      "depth": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
-      "parameterLimit": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js"
+      "arrayLimit": "/root/monitor/node_modules/egg/config/config.default.js",
+      "depth": "/root/monitor/node_modules/egg/config/config.default.js",
+      "parameterLimit": "/root/monitor/node_modules/egg/config/config.default.js"
     },
-    "onerror": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js"
+    "onerror": "/root/monitor/node_modules/egg/config/config.default.js"
   },
   "logger": {
-    "dir": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
-    "encoding": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
-    "env": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
-    "level": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
-    "consoleLevel": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
-    "disableConsoleAfterReady": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
-    "outputJSON": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
-    "buffer": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
-    "appLogName": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
-    "coreLogName": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
-    "agentLogName": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
-    "errorLogName": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
-    "coreLogger": {
-      "consoleLevel": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.local.js"
-    },
-    "allowDebugAtProd": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js"
+    "dir": "/root/monitor/node_modules/egg/config/config.default.js",
+    "encoding": "/root/monitor/node_modules/egg/config/config.default.js",
+    "env": "/root/monitor/node_modules/egg/config/config.default.js",
+    "level": "/root/monitor/node_modules/egg/config/config.default.js",
+    "consoleLevel": "/root/monitor/node_modules/egg/config/config.default.js",
+    "disableConsoleAfterReady": "/root/monitor/node_modules/egg/config/config.default.js",
+    "outputJSON": "/root/monitor/node_modules/egg/config/config.default.js",
+    "buffer": "/root/monitor/node_modules/egg/config/config.default.js",
+    "appLogName": "/root/monitor/node_modules/egg/config/config.default.js",
+    "coreLogName": "/root/monitor/node_modules/egg/config/config.default.js",
+    "agentLogName": "/root/monitor/node_modules/egg/config/config.default.js",
+    "errorLogName": "/root/monitor/node_modules/egg/config/config.default.js",
+    "coreLogger": "/root/monitor/node_modules/egg/config/config.default.js",
+    "allowDebugAtProd": "/root/monitor/node_modules/egg/config/config.default.js"
   },
   "httpclient": {
-    "enableDNSCache": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
-    "dnsCacheLookupInterval": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
-    "dnsCacheMaxLength": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
+    "enableDNSCache": "/root/monitor/node_modules/egg/config/config.default.js",
+    "dnsCacheLookupInterval": "/root/monitor/node_modules/egg/config/config.default.js",
+    "dnsCacheMaxLength": "/root/monitor/node_modules/egg/config/config.default.js",
     "request": {
-      "timeout": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js"
+      "timeout": "/root/monitor/node_modules/egg/config/config.default.js"
     },
     "httpAgent": {
-      "keepAlive": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
-      "freeSocketTimeout": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
-      "maxSockets": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
-      "maxFreeSockets": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js"
+      "keepAlive": "/root/monitor/node_modules/egg/config/config.default.js",
+      "freeSocketTimeout": "/root/monitor/node_modules/egg/config/config.default.js",
+      "maxSockets": "/root/monitor/node_modules/egg/config/config.default.js",
+      "maxFreeSockets": "/root/monitor/node_modules/egg/config/config.default.js"
     },
     "httpsAgent": {
-      "keepAlive": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
-      "freeSocketTimeout": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
-      "maxSockets": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
-      "maxFreeSockets": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js"
+      "keepAlive": "/root/monitor/node_modules/egg/config/config.default.js",
+      "freeSocketTimeout": "/root/monitor/node_modules/egg/config/config.default.js",
+      "maxSockets": "/root/monitor/node_modules/egg/config/config.default.js",
+      "maxFreeSockets": "/root/monitor/node_modules/egg/config/config.default.js"
     }
   },
   "meta": {
-    "enable": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
-    "logging": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js"
+    "enable": "/root/monitor/node_modules/egg/config/config.default.js",
+    "logging": "/root/monitor/node_modules/egg/config/config.default.js"
   },
-  "coreMiddleware": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
-  "workerStartTimeout": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
-  "serverTimeout": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
+  "coreMiddleware": "/root/monitor/node_modules/egg/config/config.default.js",
+  "workerStartTimeout": "/root/monitor/node_modules/egg/config/config.default.js",
+  "serverTimeout": "/root/monitor/node_modules/egg/config/config.default.js",
   "cluster": {
     "listen": {
-      "path": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
-      "port": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
-      "hostname": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js"
+      "path": "/root/monitor/node_modules/egg/config/config.default.js",
+      "port": "/root/monitor/node_modules/egg/config/config.default.js",
+      "hostname": "/root/monitor/node_modules/egg/config/config.default.js"
     }
   },
   "clusterClient": {
-    "maxWaitTime": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
-    "responseTimeout": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js"
+    "maxWaitTime": "/root/monitor/node_modules/egg/config/config.default.js",
+    "responseTimeout": "/root/monitor/node_modules/egg/config/config.default.js"
   },
-  "onClientError": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js"
+  "onClientError": "/root/monitor/node_modules/egg/config/config.default.js"
 }

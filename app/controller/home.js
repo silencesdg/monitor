@@ -42,8 +42,8 @@ class HomeController extends Controller {
           content: `新增错误信息\n> 时间：<font color="comment">${log.time.toLocaleString()}</font>\n> 用户：<font color="comment">${
             log.userName
           }</font>\n> ip：<font color="comment">${ip}</font>\n> 错误信息：<font color="comment">${
-            result
-          }</font>`,
+            log.error
+          }</font>\n> 解析信息: <font color="comment">${result}</font>`,
         },
       },
       headers: { "Content-Type": "application/json" },

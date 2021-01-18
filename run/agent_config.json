@@ -77,7 +77,7 @@
     "onerror": {
       "errorPageUrl": "",
       "appErrorFilter": null,
-      "templatePath": "F:\\mygit\\monitor\\node_modules\\egg-onerror\\lib\\onerror_page.mustache"
+      "templatePath": "/root/monitor/node_modules/egg-onerror/lib/onerror_page.mustache"
     },
     "i18n": {
       "defaultLocale": "en_US",
@@ -88,10 +88,10 @@
       "cookieMaxAge": "1y"
     },
     "watcher": {
-      "type": "development",
+      "type": "default",
       "eventSources": {
-        "default": "F:\\mygit\\monitor\\node_modules\\egg-watcher\\lib\\event-sources\\default",
-        "development": "F:\\mygit\\monitor\\node_modules\\egg-watcher\\lib\\event-sources\\development"
+        "default": "/root/monitor/node_modules/egg-watcher/lib/event-sources/default",
+        "development": "/root/monitor/node_modules/egg-watcher/lib/event-sources/development"
       }
     },
     "customLogger": {
@@ -114,18 +114,10 @@
       "files": 10,
       "fileExtensions": [],
       "whitelist": null,
-      "tmpdir": "C:\\Users\\NINGME\\x7e1\\AppData\\Local\\Temp\\egg-multipart-tmp\\monitor",
+      "tmpdir": "/tmp/egg-multipart-tmp/monitor",
       "cleanSchedule": {
         "cron": "0 30 4 * * *"
       }
-    },
-    "development": {
-      "watchDirs": [],
-      "ignoreDirs": [],
-      "fastReady": false,
-      "reloadOnDebug": true,
-      "overrideDefault": false,
-      "overrideIgnore": false
     },
     "logrotator": {
       "filesRotateByHour": null,
@@ -138,15 +130,16 @@
     },
     "static": {
       "prefix": "/public/",
-      "dir": "F:\\mygit\\monitor\\app\\public",
+      "dir": "/root/monitor/app/public",
       "dynamic": true,
       "preload": false,
-      "buffer": false,
-      "maxFiles": 1000
+      "buffer": true,
+      "maxFiles": 1000,
+      "maxAge": 31536000
     },
     "view": {
-      "root": "F:\\mygit\\monitor\\app\\view",
-      "cache": false,
+      "root": "/root/monitor/app/view",
+      "cache": true,
       "defaultExtension": ".html",
       "defaultViewEngine": "",
       "mapping": {}
@@ -167,7 +160,7 @@
       "origin": "*",
       "allowMethods": "GET,POST,OPTIONS"
     },
-    "env": "local",
+    "env": "prod",
     "name": "monitor",
     "keys": "<String len: 26>",
     "cookies": {},
@@ -228,9 +221,9 @@
       "author": "songkl",
       "license": "MIT"
     },
-    "baseDir": "F:\\mygit\\monitor",
-    "HOME": "C:\\Users\\NING MEI",
-    "rundir": "F:\\mygit\\monitor\\run",
+    "baseDir": "/root/monitor",
+    "HOME": "/root",
+    "rundir": "/root/monitor/run",
     "dump": {
       "ignore": "<Set>"
     },
@@ -262,21 +255,19 @@
       "onerror": "<Function onerror>"
     },
     "logger": {
-      "dir": "F:\\mygit\\monitor\\logs\\monitor",
+      "dir": "/root/logs/monitor",
       "encoding": "utf8",
-      "env": "local",
+      "env": "prod",
       "level": "INFO",
       "consoleLevel": "INFO",
-      "disableConsoleAfterReady": false,
+      "disableConsoleAfterReady": true,
       "outputJSON": false,
       "buffer": true,
       "appLogName": "monitor-web.log",
       "coreLogName": "egg-web.log",
       "agentLogName": "egg-agent.log",
       "errorLogName": "common-error.log",
-      "coreLogger": {
-        "consoleLevel": "WARN"
-      },
+      "coreLogger": {},
       "allowDebugAtProd": false,
       "type": "agent"
     },
@@ -340,8 +331,8 @@
         "jsonp"
       ],
       "env": [],
-      "from": "F:\\mygit\\monitor\\node_modules\\egg\\config\\plugin.js",
-      "path": "F:\\mygit\\monitor\\node_modules\\egg-onerror",
+      "from": "/root/monitor/node_modules/egg/config/plugin.js",
+      "path": "/root/monitor/node_modules/egg-onerror",
       "version": "2.1.0"
     },
     "session": {
@@ -351,8 +342,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "F:\\mygit\\monitor\\node_modules\\egg\\config\\plugin.js",
-      "path": "F:\\mygit\\monitor\\node_modules\\egg-session",
+      "from": "/root/monitor/node_modules/egg/config/plugin.js",
+      "path": "/root/monitor/node_modules/egg-session",
       "version": "3.2.0"
     },
     "i18n": {
@@ -362,8 +353,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "F:\\mygit\\monitor\\node_modules\\egg\\config\\plugin.js",
-      "path": "F:\\mygit\\monitor\\node_modules\\egg-i18n",
+      "from": "/root/monitor/node_modules/egg/config/plugin.js",
+      "path": "/root/monitor/node_modules/egg-i18n",
       "version": "2.1.1"
     },
     "watcher": {
@@ -373,8 +364,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "F:\\mygit\\monitor\\node_modules\\egg\\config\\plugin.js",
-      "path": "F:\\mygit\\monitor\\node_modules\\egg-watcher",
+      "from": "/root/monitor/node_modules/egg/config/plugin.js",
+      "path": "/root/monitor/node_modules/egg-watcher",
       "version": "3.1.1"
     },
     "multipart": {
@@ -386,8 +377,8 @@
         "schedule"
       ],
       "env": [],
-      "from": "F:\\mygit\\monitor\\node_modules\\egg\\config\\plugin.js",
-      "path": "F:\\mygit\\monitor\\node_modules\\egg-multipart",
+      "from": "/root/monitor/node_modules/egg/config/plugin.js",
+      "path": "/root/monitor/node_modules/egg-multipart",
       "version": "2.10.3"
     },
     "security": {
@@ -399,12 +390,12 @@
         "session"
       ],
       "env": [],
-      "from": "F:\\mygit\\monitor\\node_modules\\egg\\config\\plugin.js",
-      "path": "F:\\mygit\\monitor\\node_modules\\egg-security",
+      "from": "/root/monitor/node_modules/egg/config/plugin.js",
+      "path": "/root/monitor/node_modules/egg-security",
       "version": "2.8.0"
     },
     "development": {
-      "enable": true,
+      "enable": false,
       "package": "egg-development",
       "name": "development",
       "dependencies": [
@@ -414,8 +405,8 @@
       "env": [
         "local"
       ],
-      "from": "F:\\mygit\\monitor\\node_modules\\egg\\config\\plugin.js",
-      "path": "F:\\mygit\\monitor\\node_modules\\egg-development",
+      "from": "/root/monitor/node_modules/egg/config/plugin.js",
+      "path": "/root/monitor/node_modules/egg-development",
       "version": "2.7.0"
     },
     "logrotator": {
@@ -427,8 +418,8 @@
       ],
       "optionalDependencies": [],
       "env": [],
-      "from": "F:\\mygit\\monitor\\node_modules\\egg\\config\\plugin.js",
-      "path": "F:\\mygit\\monitor\\node_modules\\egg-logrotator",
+      "from": "/root/monitor/node_modules/egg/config/plugin.js",
+      "path": "/root/monitor/node_modules/egg-logrotator",
       "version": "3.1.0"
     },
     "schedule": {
@@ -438,8 +429,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "F:\\mygit\\monitor\\node_modules\\egg\\config\\plugin.js",
-      "path": "F:\\mygit\\monitor\\node_modules\\egg-schedule",
+      "from": "/root/monitor/node_modules/egg/config/plugin.js",
+      "path": "/root/monitor/node_modules/egg-schedule",
       "version": "3.6.6"
     },
     "static": {
@@ -449,8 +440,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "F:\\mygit\\monitor\\node_modules\\egg\\config\\plugin.js",
-      "path": "F:\\mygit\\monitor\\node_modules\\egg-static",
+      "from": "/root/monitor/node_modules/egg/config/plugin.js",
+      "path": "/root/monitor/node_modules/egg-static",
       "version": "2.2.0"
     },
     "jsonp": {
@@ -462,8 +453,8 @@
         "security"
       ],
       "env": [],
-      "from": "F:\\mygit\\monitor\\node_modules\\egg\\config\\plugin.js",
-      "path": "F:\\mygit\\monitor\\node_modules\\egg-jsonp",
+      "from": "/root/monitor/node_modules/egg/config/plugin.js",
+      "path": "/root/monitor/node_modules/egg-jsonp",
       "version": "2.0.0"
     },
     "view": {
@@ -473,8 +464,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "F:\\mygit\\monitor\\node_modules\\egg\\config\\plugin.js",
-      "path": "F:\\mygit\\monitor\\node_modules\\egg-view",
+      "from": "/root/monitor/node_modules/egg/config/plugin.js",
+      "path": "/root/monitor/node_modules/egg-view",
       "version": "2.1.2"
     },
     "mongoose": {
@@ -484,8 +475,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "F:\\mygit\\monitor\\config\\plugin.js",
-      "path": "F:\\mygit\\monitor\\node_modules\\egg-mongoose",
+      "from": "/root/monitor/config/plugin.js",
+      "path": "/root/monitor/node_modules/egg-mongoose",
       "version": "3.3.1"
     },
     "cors": {
@@ -495,8 +486,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "F:\\mygit\\monitor\\config\\plugin.js",
-      "path": "F:\\mygit\\monitor\\node_modules\\egg-cors",
+      "from": "/root/monitor/config/plugin.js",
+      "path": "/root/monitor/node_modules/egg-cors",
       "version": "2.2.3"
     }
   }
