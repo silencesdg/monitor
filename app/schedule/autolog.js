@@ -3,7 +3,7 @@ const axios = require("axios");
 
 module.exports = {
   schedule: {
-    cron: "0 0 20 * * *", //每天20点
+    cron: "0 30 9 * * *", //每天点
     type: "all", // 指定所有的 worker 都需要执行
     disable:false
   },
@@ -59,6 +59,8 @@ module.exports = {
         logShow();
       }, 60000);
     };
+
+    logShow();
   },
 };
 
