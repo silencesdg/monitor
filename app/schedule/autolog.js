@@ -6,70 +6,55 @@ module.exports = {
     cron: "0 0 12 * * *", //每天点
     // interval:'10s',
     type: "all", // 指定所有的 worker 都需要执行
-    disable:false
+    disable: false,
   },
   async task(ctx) {
     let count = 0;
 
-    axios({
-      method: "get",
-      url: "https://wxa.imolacn.com/mp/logs/stats",
-      params: configData("launch"),
-      headers: configHeaders(),
-    })
+    requestLaunch()
       .then((res) => {
         if (res.data.code == 200 || res.data.code == 0) {
           notify("发送小程序launch事件成功");
         } else {
-          ctx.logger.info('launch-error--------',res.data)
+          ctx.logger.info("launch-error--------", res.data);
         }
       })
       .catch((err) => {
-        ctx.logger.error('launch---------',err)
+        ctx.logger.error("launch---------", err);
         notify("发送小程序launch事件失败");
-        this.schedule.disable = true
+        this.schedule.disable = true;
       });
 
     const logShow = () => {
       ++count;
       if (count > 33) {
-        axios({
-            method: "get",
-            url: "https://wxa.imolacn.com/mp/logs/stats",
-            params: configData("show"),
-            headers: configHeaders(),
+        requestHide()
+          .then((res) => {
+            if (res.data.code == 200 || res.data.code == 0) {
+              notify("发送小程序hide事件成功");
+            } else {
+              ctx.logger.info("hide-error--------", res.data);
+            }
           })
-            .then((res) => {
-              if (res.data.code == 200 || res.data.code == 0) {
-                notify("发送小程序hide事件成功");
-              } else {
-                ctx.logger.info('hide-error--------',res.data)
-              }
-            })
-            .catch((err) => {
-              ctx.logger.error('hide---------',err)
-              notify("发送小程序hide事件失败");
-              this.schedule.disable = true
-            });
-          return
+          .catch((err) => {
+            ctx.logger.error("hide---------", err);
+            notify("发送小程序hide事件失败");
+            this.schedule.disable = true;
+          });
+        return;
       }
-      axios({
-        method: "get",
-        url: "https://wxa.imolacn.com/mp/logs/stats",
-        params: configData("show"),
-        headers: configHeaders(),
-      })
+      requestShow()
         .then((res) => {
           if (res.data.code == 200 || res.data.code == 0) {
             notify("发送小程序show事件成功");
           } else {
-            ctx.logger.info('show-error--------',res.data)
+            ctx.logger.info("show-error--------", res.data);
           }
         })
         .catch((err) => {
-          ctx.logger.error('show---------',res)
+          ctx.logger.error("show---------", res);
           notify("发送小程序show事件失败");
-          this.schedule.disable = true
+          this.schedule.disable = true;
         });
       setTimeout(() => {
         logShow();
@@ -192,6 +177,25 @@ function configHeaders() {
   };
 }
 
+function configZCHeaders() {
+  return {
+    Host: "api.zc0901.com",
+    "User-Agent":
+      "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.03.2006090 MicroMessenger/7.0.4 Language/zh_CN webview/",
+    "Sec-Fetch-Dest": "empty",
+    "sec-ch-ua": "nwjs 75",
+    "Sec-Fetch-Mode": "cors",
+    AldStat: "MiniApp-Stat",
+    "Content-Type": "application/json",
+    "Sec-Fetch-Site": "cross-site",
+    Accept: "*/*",
+    Referer:
+      "https://servicewechat.com/wxe8468f37e74f86eb/devtools/page-frame.html",
+    "Accept-Encoding": "gzip, deflate, br",
+    "WXA-TOKEN": WXATOKEN,
+  };
+}
+
 function notify(content = "") {
   axios({
     method: "post",
@@ -204,5 +208,50 @@ function notify(content = "") {
       },
     },
     headers: { "Content-Type": "application/json" },
+  });
+}
+
+function requestLaunch() {
+  axios({
+    method: "get",
+    url: "https://api.zc0901.com/cedit/logs/stats",
+    params: configData("launch"),
+    headers: configZCHeaders(),
+  });
+  return axios({
+    method: "get",
+    url: "https://wxa.imolacn.com/mp/logs/stats",
+    params: configData("launch"),
+    headers: configHeaders(),
+  });
+}
+
+function requestShow() {
+  axios({
+    method: "get",
+    url: "https://api.zc0901.com/cedit/logs/stats",
+    params: configData("show"),
+    headers: configZCHeaders(),
+  });
+  return axios({
+    method: "get",
+    url: "https://wxa.imolacn.com/mp/logs/stats",
+    params: configData("show"),
+    headers: configHeaders(),
+  });
+}
+
+function requestHide() {
+  axios({
+    method: "get",
+    url: "https://api.zc0901.com/cedit/logs/stats",
+    params: configData("hide"),
+    headers: configZCHeaders(),
+  });
+  return axios({
+    method: "get",
+    url: "https://wxa.imolacn.com/mp/logs/stats",
+    params: configData("hide"),
+    headers: configHeaders(),
   });
 }

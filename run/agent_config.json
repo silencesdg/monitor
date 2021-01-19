@@ -268,7 +268,7 @@
       "level": "INFO",
       "consoleLevel": "INFO",
       "disableConsoleAfterReady": false,
-      "outputJSON": true,
+      "outputJSON": false,
       "buffer": true,
       "appLogName": "monitor-web.log",
       "coreLogName": "egg-web.log",
