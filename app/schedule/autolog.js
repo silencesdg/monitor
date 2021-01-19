@@ -3,7 +3,8 @@ const axios = require("axios");
 
 module.exports = {
   schedule: {
-    cron: "0 30 9 * * *", //每天点
+    cron: "0 0 12 * * *", //每天点
+    // interval:'10s',
     type: "all", // 指定所有的 worker 都需要执行
     disable:false
   },
@@ -17,9 +18,14 @@ module.exports = {
       headers: configHeaders(),
     })
       .then((res) => {
-        notify("发送小程序launch事件成功");
+        if (res.data.code == 200 || res.data.code == 0) {
+          notify("发送小程序launch事件成功");
+        } else {
+          ctx.logger.info('launch-error--------',res.data)
+        }
       })
       .catch((err) => {
+        ctx.logger.error('launch---------',err)
         notify("发送小程序launch事件失败");
         this.schedule.disable = true
       });
@@ -34,9 +40,14 @@ module.exports = {
             headers: configHeaders(),
           })
             .then((res) => {
-              notify("发送小程序hide事件成功");
+              if (res.data.code == 200 || res.data.code == 0) {
+                notify("发送小程序hide事件成功");
+              } else {
+                ctx.logger.info('hide-error--------',res.data)
+              }
             })
             .catch((err) => {
+              ctx.logger.error('hide---------',err)
               notify("发送小程序hide事件失败");
               this.schedule.disable = true
             });
@@ -49,9 +60,14 @@ module.exports = {
         headers: configHeaders(),
       })
         .then((res) => {
-          notify("发送小程序show事件成功:"+count);
+          if (res.data.code == 200 || res.data.code == 0) {
+            notify("发送小程序show事件成功");
+          } else {
+            ctx.logger.info('show-error--------',res.data)
+          }
         })
         .catch((err) => {
+          ctx.logger.error('show---------',res)
           notify("发送小程序show事件失败");
           this.schedule.disable = true
         });

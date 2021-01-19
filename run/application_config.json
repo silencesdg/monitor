@@ -108,6 +108,7 @@
         "F:\\mygit\\monitor\\node_modules\\egg-view\\config\\locales",
         "F:\\mygit\\monitor\\node_modules\\egg-mongoose\\config\\locales",
         "F:\\mygit\\monitor\\node_modules\\egg-cors\\config\\locales",
+        "F:\\mygit\\monitor\\node_modules\\egg-logger\\config\\locales",
         "F:\\mygit\\monitor\\node_modules\\egg\\config\\locales",
         "F:\\mygit\\monitor\\config\\locales"
       ],
@@ -300,7 +301,7 @@
       "level": "INFO",
       "consoleLevel": "INFO",
       "disableConsoleAfterReady": false,
-      "outputJSON": false,
+      "outputJSON": true,
       "buffer": true,
       "appLogName": "monitor-web.log",
       "coreLogName": "egg-web.log",
@@ -548,6 +549,17 @@
       "from": "F:\\mygit\\monitor\\config\\plugin.js",
       "path": "F:\\mygit\\monitor\\node_modules\\egg-cors",
       "version": "2.2.3"
+    },
+    "logger": {
+      "enable": true,
+      "package": "egg-logger",
+      "name": "logger",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "F:\\mygit\\monitor\\config\\plugin.js",
+      "path": "F:\\mygit\\monitor\\node_modules\\egg-logger",
+      "version": "2.4.2"
     }
   }
 }

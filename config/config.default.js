@@ -27,6 +27,8 @@ module.exports = (appInfo) => {
       origin: "*",
       allowMethods: "GET,POST,OPTIONS",
     },
+    logger: {
+    }
   });
 
   // use for cookie sign key, should change to your own and keep security

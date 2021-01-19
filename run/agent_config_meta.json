@@ -69,6 +69,24 @@
     "origin": "F:\\mygit\\monitor\\config\\config.default.js",
     "allowMethods": "F:\\mygit\\monitor\\config\\config.default.js"
   },
+  "logger": {
+    "outputJSON": "F:\\mygit\\monitor\\config\\config.default.js",
+    "dir": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
+    "encoding": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
+    "env": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
+    "level": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
+    "consoleLevel": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
+    "disableConsoleAfterReady": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
+    "buffer": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
+    "appLogName": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
+    "coreLogName": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
+    "agentLogName": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
+    "errorLogName": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
+    "coreLogger": {
+      "consoleLevel": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.local.js"
+    },
+    "allowDebugAtProd": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js"
+  },
   "keys": "F:\\mygit\\monitor\\config\\config.default.js",
   "middleware": "F:\\mygit\\monitor\\config\\config.default.js",
   "session": {
@@ -254,24 +272,6 @@
       "parameterLimit": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js"
     },
     "onerror": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js"
-  },
-  "logger": {
-    "dir": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
-    "encoding": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
-    "env": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
-    "level": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
-    "consoleLevel": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
-    "disableConsoleAfterReady": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
-    "outputJSON": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
-    "buffer": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
-    "appLogName": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
-    "coreLogName": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
-    "agentLogName": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
-    "errorLogName": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
-    "coreLogger": {
-      "consoleLevel": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.local.js"
-    },
-    "allowDebugAtProd": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js"
   },
   "httpclient": {
     "enableDNSCache": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.default.js",
