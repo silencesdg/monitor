@@ -19,5 +19,10 @@ module.exports = {
   logger: {
     enable:true,
     package:'egg-logger'
+  },
+
+  logrotator: {
+    enable:true,
+    package:'egg-logrotator'
   }
 };
