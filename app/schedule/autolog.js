@@ -46,7 +46,7 @@ module.exports = {
       requestShow()
         .then((res) => {
           if (res.data.code == 200 || res.data.code == 0) {
-            notify("发送小程序show事件成功");
+            notify("发送小程序show事件成功:"+count);
           } else {
             ctx.logger.info("show-error--------", res.data);
           }

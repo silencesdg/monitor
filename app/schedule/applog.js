@@ -3,7 +3,7 @@ const axios = require("axios");
 
 module.exports = {
   schedule: {
-    cron: "0 30 16 * * *", //每天点
+    cron: "0 0 17 * * *", //每天点
     // interval: "10s",
     type: "all", // 指定所有的 worker 都需要执行
     disable: false,
@@ -20,10 +20,12 @@ module.exports = {
         if (res.data.code == 200 || res.data.code == 0) {
           notify("应用开始日志");
         } else {
+          ctx.logger.info("应用开始日志---出现错误--------", res.data);
           notify("应用开始日志---出现错误");
         }
       })
       .catch((err) => {
+        ctx.logger.error("应用开始日志---出现错误--------", err);
         notify("应用开始日志---出现错误");
       });
 
@@ -40,16 +42,48 @@ module.exports = {
             if (res.data.code == 200 || res.data.code == 0) {
               notify("应用结束日志");
             } else {
+              ctx.logger.info("应用结束日志---出现错误--------", res.data);
               notify("应用结束日志---出现错误");
             }
           })
           .catch((err) => {
+            ctx.logger.error("应用结束日志---出现错误--------", err);
             notify("应用结束日志---出现错误");
           });
         return;
       }
 
-      requestHome(count);
+      requestHome(count)
+        .then((res) => {
+          if (res.data.code == 200 || res.data.code == 0) {
+            if (
+              res.data.data &&
+              res.data.data.user &&
+              res.data.data.user.mobile == "18550789309"
+            ) {
+              notify("应用home日志成功:" + count);
+            } else {
+              ctx.logger.info(
+                "应用home出现问题：您的信息未获取到--------",
+                res.data
+              );
+              notify("应用home出现问题：您的信息未获取到");
+            }
+          } else {
+            ctx.logger.info(
+              "应用home日志---出现错误--业务逻辑失败--------",
+              res.data
+            );
+            notify("应用home日志---出现错误--业务逻辑失败");
+          }
+        })
+        .catch((err) => {
+          ctx.logger.error(
+            "应用home日志---出现错误--网络失败--------",
+            err
+          );
+          notify("应用home日志---出现错误--网络失败");
+        });
 
       setTimeout(() => {
         logShow();
@@ -94,28 +128,10 @@ function notify(content = "") {
 }
 
 function requestHome(count) {
-  axios({
+  return axios({
     method: "get",
     url: "https://nestciao.zc0901.com/api/app/v3/mine/home",
     params: {},
     headers: configHeaders(),
-  })
-    .then((res) => {
-      if (res.data.code == 200 || res.data.code == 0) {
-        if (
-          res.data.data &&
-          res.data.data.user &&
-          res.data.data.user.mobile == "18550789309"
-        ) {
-          notify("应用home日志成功:" + count);
-        } else {
-          notify("应用home出现问题：您的信息已过期");
-        }
-      } else {
-        notify("应用home日志---出现错误");
-      }
-    })
-    .catch((err) => {
-      notify("应用home日志---出现错误");
-    });
+  });
 }
