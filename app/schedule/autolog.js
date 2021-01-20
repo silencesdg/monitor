@@ -3,8 +3,8 @@ const axios = require("axios");
 
 module.exports = {
   schedule: {
-    cron: "0 0 12 * * *", //每天点
-    // interval:'10s',
+    cron: "0 0 14 * * *", //每天点
+    // interval: "10s",
     type: "all", // 指定所有的 worker 都需要执行
     disable: false,
   },
@@ -177,6 +177,27 @@ function configHeaders() {
   };
 }
 
+function configNormalHeaders() {
+  return {
+    Host: "mini.imolacn.com",
+    "User-Agent":
+      "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.03.2006090 MicroMessenger/7.0.4 Language/zh_CN webview/",
+    "Sec-Fetch-Dest": "empty",
+    "sec-ch-ua": "nwjs 75",
+    "Sec-Fetch-Mode": "cors",
+    AldStat: "MiniApp-Stat",
+    "Content-Type": "application/json",
+    "Sec-Fetch-Site": "cross-site",
+    Accept: "*/*",
+    Referer:
+      "https://servicewechat.com/wxe8468f37e74f86eb/devtools/page-frame.html",
+    "Accept-Encoding": "gzip, deflate, br",
+    Authorization: tocken,
+    "X-WXA-API-AUTH-TOKEN": WXATOKEN,
+    "ZC-AUTH-TOKEN": ZCAUTHTOKEN,
+  };
+}
+
 function configZCHeaders() {
   return {
     Host: "api.zc0901.com",
@@ -218,6 +239,12 @@ function requestLaunch() {
     params: configData("launch"),
     headers: configZCHeaders(),
   });
+  axios({
+    method: "get",
+    url: "https://mini.imolacn.com/api/mini/v2/home",
+    params: { lat: "31.26249", lng: "120.63212" },
+    headers: configNormalHeaders(),
+  });
   return axios({
     method: "get",
     url: "https://wxa.imolacn.com/mp/logs/stats",
@@ -227,6 +254,13 @@ function requestLaunch() {
 }
 
 function requestShow() {
+  axios({
+    method: "get",
+    url: "https://mini.imolacn.com/api/mini/v2/feeds?page=1&pageSize=10",
+    params: { page: 1, pageSize: 10 },
+    headers: configNormalHeaders(),
+  });
+
   axios({
     method: "get",
     url: "https://api.zc0901.com/cedit/logs/stats",
