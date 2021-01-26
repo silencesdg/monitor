@@ -1,6 +1,6 @@
 //用于自动发送log
 const axios = require("axios");
-
+let startTime = Date.now()
 module.exports = {
   schedule: {
     cron: "0 0 14 * * *", //每天点
@@ -10,7 +10,7 @@ module.exports = {
   },
   async task(ctx) {
     let count = 0;
-
+    startTime = Date.now()
     requestLaunch()
       .then((res) => {
         if (res.data.code == 200 || res.data.code == 0) {
@@ -90,7 +90,7 @@ function configData(life = "launch") {
     ev: "app",
     life: "launch",
     ec: 0,
-    st: time,
+    st: startTime,
     at,
     et: time + 200,
     uu,
@@ -115,7 +115,7 @@ function configData(life = "launch") {
     ev: "app",
     life: "show",
     ec: 0,
-    st: time,
+    st: startTime,
     ahs,
     at,
     et: time + 128,
@@ -141,7 +141,7 @@ function configData(life = "launch") {
     ev: "app",
     life: "show",
     ec: 0,
-    st: time,
+    st: startTime,
     ahs,
     at,
     et: time + 192,
