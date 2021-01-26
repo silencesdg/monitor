@@ -1,19 +1,20 @@
 //用于自动发送log
 const axios = require("axios");
-let startTime = Date.now()
+let startTime = Date.now();
 module.exports = {
   schedule: {
-    cron: "0 0 14 * * *", //每天点
-    // interval: "10s",
+    cron: "0 30 18 * * *", //每天点
+    // interval: "3s",
     type: "all", // 指定所有的 worker 都需要执行
     disable: false,
   },
   async task(ctx) {
     let count = 0;
-    startTime = Date.now()
+    startTime = Date.now();
     requestLaunch()
       .then((res) => {
         if (res.data.code == 200 || res.data.code == 0) {
+          ctx.logger.info("小程序launch记录--------", res);
           notify("发送小程序launch事件成功");
         } else {
           ctx.logger.info("launch-error--------", res.data);
@@ -31,6 +32,7 @@ module.exports = {
         requestHide()
           .then((res) => {
             if (res.data.code == 200 || res.data.code == 0) {
+              ctx.logger.info("小程序hide记录--------", res);
               notify("发送小程序hide事件成功");
             } else {
               ctx.logger.info("hide-error--------", res.data);
@@ -46,7 +48,8 @@ module.exports = {
       requestShow()
         .then((res) => {
           if (res.data.code == 200 || res.data.code == 0) {
-            notify("发送小程序show事件成功:"+count);
+            ctx.logger.info("小程序show记录--------", res);
+            notify("发送小程序show事件成功:" + count);
           } else {
             ctx.logger.info("show-error--------", res.data);
           }
@@ -153,7 +156,41 @@ function configData(life = "launch") {
     rq_c: 2,
   };
 
-  return { launch: launch, show: show, hide: hide } || launch;
+  let home = {
+    br: "devtools",
+    pm: "iPhone 6/7/8",
+    pr: "2",
+    ww: 375,
+    wh: 667,
+    lang: "zh_CN",
+    wv: "7.0.4",
+    wvv: "devtools",
+    wsdk: "2.14.0",
+    sv: "iOS 10.0.1",
+    nt: "wifi",
+    ev: "page",
+    st: "1611653817430",
+    life: "unload",
+    pp: "pages/land/land",
+    pc: "",
+    dr: "3782",
+    ndr: "2678",
+    rc: "0",
+    bc: "0",
+    ahs: "16116538135386007936",
+    ifp: "true",
+    fp: "pages/land/land",
+    at: "16116538135387486327",
+    et: "1611653817430",
+    uu: "20e7fa71f56069f323a8fa3094456317",
+    v: "7.0.0",
+    ak: "",
+    wsr: { path: "pages/land/land", query: {}, scene: 1001, referrerInfo: {} },
+    oifo: "false",
+    rq_c: "3",
+  };
+
+  return ({ launch: launch, show: show, hide: hide, home }[life]) || launch;
 }
 
 function configHeaders() {
@@ -254,13 +291,22 @@ function requestLaunch() {
 }
 
 function requestShow() {
+  // 进入落地页面发送的
   axios({
     method: "get",
-    url: "https://mini.imolacn.com/api/mini/v2/feeds?page=1&pageSize=10",
-    params: { page: 1, pageSize: 10 },
-    headers: configNormalHeaders(),
+    url: "https://api.zc0901.com/cedit/logs/stats",
+    params: configData("home"),
+    headers: configZCHeaders(),
   });
 
+  axios({
+    method: "get",
+    url: "https://wxa.imolacn.com/mp/logs/stats",
+    params: configData("home"),
+    headers: configHeaders(),
+  });
+
+  // app show生命周期发送的
   axios({
     method: "get",
     url: "https://api.zc0901.com/cedit/logs/stats",
