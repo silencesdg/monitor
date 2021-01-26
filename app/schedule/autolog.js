@@ -3,7 +3,7 @@ const axios = require("axios");
 let startTime = Date.now();
 module.exports = {
   schedule: {
-    cron: "0 30 18 * * *", //每天点
+    cron: "0 0 13 * * *", //每天点
     // interval: "3s",
     type: "all", // 指定所有的 worker 都需要执行
     disable: false,
@@ -99,7 +99,7 @@ function configData(life = "launch") {
     uu,
     v: "7.0.0",
     ak: "",
-    wsr: { path: "pages/land/land", query: {}, scene: 1001, referrerInfo: {} },
+    wsr: JSON.stringify({ path: "pages/land/land", query: {}, scene: 1001, referrerInfo: {} }),
     oifo: false,
     rq_c: 2,
   };
@@ -125,7 +125,7 @@ function configData(life = "launch") {
     uu,
     v: "7.0.0",
     ak: "",
-    wsr: { path: "pages/land/land", query: {}, scene: 1001, referrerInfo: {} },
+    wsr: JSON.stringify({ path: "pages/land/land", query: {}, scene: 1001, referrerInfo: {} }),
     oifo: false,
     rq_c: 2,
   };
@@ -151,7 +151,7 @@ function configData(life = "launch") {
     uu,
     v: "7.0.0",
     ak: "",
-    wsr: { path: "pages/home/home", query: {}, scene: 1001, referrerInfo: {} },
+    wsr: JSON.stringify({ path: "pages/home/home", query: {}, scene: 1001, referrerInfo: {} }),
     oifo: false,
     rq_c: 2,
   };
@@ -185,7 +185,7 @@ function configData(life = "launch") {
     uu: "20e7fa71f56069f323a8fa3094456317",
     v: "7.0.0",
     ak: "",
-    wsr: { path: "pages/land/land", query: {}, scene: 1001, referrerInfo: {} },
+    wsr: JSON.stringify({ path: "pages/land/land", query: {}, scene: 1001, referrerInfo: {} }),
     oifo: "false",
     rq_c: "3",
   };
