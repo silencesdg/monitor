@@ -3,7 +3,7 @@ const axios = require("axios");
 let startTime = Date.now();
 module.exports = {
   schedule: {
-    cron: "0 0 13 * * *", //每天点
+    cron: "0 10 19 * * *", //每天点
     // interval: "3s",
     type: "all", // 指定所有的 worker 都需要执行
     disable: false,
