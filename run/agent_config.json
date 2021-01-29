@@ -88,7 +88,7 @@
       "cookieMaxAge": "1y"
     },
     "watcher": {
-      "type": "development",
+      "type": "default",
       "eventSources": {
         "default": "F:\\mygit\\monitor\\node_modules\\egg-watcher\\lib\\event-sources\\default",
         "development": "F:\\mygit\\monitor\\node_modules\\egg-watcher\\lib\\event-sources\\development"
@@ -119,14 +119,6 @@
         "cron": "0 30 4 * * *"
       }
     },
-    "development": {
-      "watchDirs": [],
-      "ignoreDirs": [],
-      "fastReady": false,
-      "reloadOnDebug": true,
-      "overrideDefault": false,
-      "overrideIgnore": false
-    },
     "logrotator": {
       "filesRotateByHour": null,
       "hourDelimiter": "-",
@@ -141,12 +133,13 @@
       "dir": "F:\\mygit\\monitor\\app\\public",
       "dynamic": true,
       "preload": false,
-      "buffer": false,
-      "maxFiles": 1000
+      "buffer": true,
+      "maxFiles": 1000,
+      "maxAge": 31536000
     },
     "view": {
       "root": "F:\\mygit\\monitor\\app\\view",
-      "cache": false,
+      "cache": true,
       "defaultExtension": ".html",
       "defaultViewEngine": "",
       "mapping": {}
@@ -167,7 +160,7 @@
       "origin": "*",
       "allowMethods": "GET,POST,OPTIONS"
     },
-    "env": "local",
+    "env": "prod",
     "name": "monitor",
     "keys": "<String len: 26>",
     "cookies": {},
@@ -262,21 +255,19 @@
       "onerror": "<Function onerror>"
     },
     "logger": {
-      "dir": "F:\\mygit\\monitor\\logs\\monitor",
+      "dir": "C:\\Users\\NING MEI\\logs\\monitor",
       "encoding": "utf8",
-      "env": "local",
+      "env": "prod",
       "level": "INFO",
       "consoleLevel": "INFO",
-      "disableConsoleAfterReady": false,
+      "disableConsoleAfterReady": true,
       "outputJSON": false,
       "buffer": true,
       "appLogName": "monitor-web.log",
       "coreLogName": "egg-web.log",
       "agentLogName": "egg-agent.log",
       "errorLogName": "common-error.log",
-      "coreLogger": {
-        "consoleLevel": "WARN"
-      },
+      "coreLogger": {},
       "allowDebugAtProd": false,
       "type": "agent"
     },
@@ -404,7 +395,7 @@
       "version": "2.8.0"
     },
     "development": {
-      "enable": true,
+      "enable": false,
       "package": "egg-development",
       "name": "development",
       "dependencies": [
@@ -420,14 +411,14 @@
     },
     "logrotator": {
       "enable": true,
-      "package": "egg-logrotator",
       "name": "logrotator",
       "dependencies": [
         "schedule"
       ],
       "optionalDependencies": [],
       "env": [],
-      "from": "F:\\mygit\\monitor\\node_modules\\egg\\config\\plugin.js",
+      "from": "F:\\mygit\\monitor\\config\\plugin.js",
+      "package": "egg-logrotator",
       "path": "F:\\mygit\\monitor\\node_modules\\egg-logrotator",
       "version": "3.1.0"
     },
