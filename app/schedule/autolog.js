@@ -3,11 +3,11 @@ const axios = require("axios");
 const fs = require("fs");
 const path = require("path");
 
-const imolaUrl = "https://wxa.imolacn.com/mp/logs/stats";
-const zcUrl = "https://api.zc0901.com/cedit/logs/stats";
+// const imolaUrl = "https://wxa.imolacn.com/mp/logs/stats";
+// const zcUrl = "https://api.zc0901.com/cedit/logs/stats";
 
-// const imolaUrl = "http://127.0.0.1:7001/writeWxappLog/imola";
-// const zcUrl = "http://127.0.0.1:7001/writeWxappLog/zc";
+const imolaUrl = "http://127.0.0.1:7001/writeWxappLog/imola";
+const zcUrl = "http://127.0.0.1:7001/writeWxappLog/zc";
 
 const IMOLATOCKEN =
   "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjgwNjMsInVzZXJJZCI6ODA2Mywic3RvcmUiOm51bGwsImlzTWVtYmVyIjp0cnVlLCJleHAiOjQ3NjQ1NTc5OTF9.DTRSpUQwH4hDAyfHmy8VP-CpH0xvYYoBpnj-_NazqTk";
@@ -17,7 +17,7 @@ const ZCAUTHTOKEN =
 
 module.exports = {
   schedule: {
-    cron: "00 00 19 * * *", //每天点
+    cron: "00 43 18 * * *", //每天点
     // interval: "3s",
     type: "all", // 指定所有的 worker 都需要执行
     disable: false,

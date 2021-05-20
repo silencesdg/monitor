@@ -88,7 +88,7 @@
       "cookieMaxAge": "1y"
     },
     "watcher": {
-      "type": "default",
+      "type": "development",
       "eventSources": {
         "default": "F:\\mygit\\monitor\\node_modules\\egg-watcher\\lib\\event-sources\\default",
         "development": "F:\\mygit\\monitor\\node_modules\\egg-watcher\\lib\\event-sources\\development"
@@ -119,6 +119,14 @@
         "cron": "0 30 4 * * *"
       }
     },
+    "development": {
+      "watchDirs": [],
+      "ignoreDirs": [],
+      "fastReady": false,
+      "reloadOnDebug": true,
+      "overrideDefault": false,
+      "overrideIgnore": false
+    },
     "logrotator": {
       "filesRotateByHour": null,
       "hourDelimiter": "-",
@@ -133,13 +141,12 @@
       "dir": "F:\\mygit\\monitor\\app\\public",
       "dynamic": true,
       "preload": false,
-      "buffer": true,
-      "maxFiles": 1000,
-      "maxAge": 31536000
+      "buffer": false,
+      "maxFiles": 1000
     },
     "view": {
       "root": "F:\\mygit\\monitor\\app\\view",
-      "cache": true,
+      "cache": false,
       "defaultExtension": ".html",
       "defaultViewEngine": "",
       "mapping": {}
@@ -160,7 +167,7 @@
       "origin": "*",
       "allowMethods": "GET,POST,OPTIONS"
     },
-    "env": "prod",
+    "env": "local",
     "name": "monitor",
     "keys": "<String len: 26>",
     "cookies": {},
@@ -255,19 +262,21 @@
       "onerror": "<Function onerror>"
     },
     "logger": {
-      "dir": "C:\\Users\\NING MEI\\logs\\monitor",
+      "dir": "F:\\mygit\\monitor\\logs\\monitor",
       "encoding": "utf8",
-      "env": "prod",
+      "env": "local",
       "level": "INFO",
       "consoleLevel": "INFO",
-      "disableConsoleAfterReady": true,
+      "disableConsoleAfterReady": false,
       "outputJSON": false,
       "buffer": true,
       "appLogName": "monitor-web.log",
       "coreLogName": "egg-web.log",
       "agentLogName": "egg-agent.log",
       "errorLogName": "common-error.log",
-      "coreLogger": {},
+      "coreLogger": {
+        "consoleLevel": "WARN"
+      },
       "allowDebugAtProd": false,
       "type": "agent"
     },
@@ -395,7 +404,7 @@
       "version": "2.8.0"
     },
     "development": {
-      "enable": false,
+      "enable": true,
       "package": "egg-development",
       "name": "development",
       "dependencies": [

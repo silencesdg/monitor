@@ -32,7 +32,7 @@
       "value": "F:\\mygit\\monitor\\node_modules\\egg-security\\config\\config.default.js"
     },
     "hsts": {
-      "enable": "F:\\mygit\\monitor\\node_modules\\egg-security\\config\\config.default.js",
+      "enable": "F:\\mygit\\monitor\\node_modules\\egg-security\\config\\config.local.js",
       "maxAge": "F:\\mygit\\monitor\\node_modules\\egg-security\\config\\config.default.js",
       "includeSubdomains": "F:\\mygit\\monitor\\node_modules\\egg-security\\config\\config.default.js"
     },
@@ -69,7 +69,11 @@
     "origin": "F:\\mygit\\monitor\\config\\config.default.js",
     "allowMethods": "F:\\mygit\\monitor\\config\\config.default.js"
   },
-  "logger": "F:\\mygit\\monitor\\config\\config.default.js",
+  "logger": {
+    "coreLogger": {
+      "consoleLevel": "F:\\mygit\\monitor\\node_modules\\egg\\config\\config.local.js"
+    }
+  },
   "logrotator": "F:\\mygit\\monitor\\config\\config.default.js",
   "keys": "F:\\mygit\\monitor\\config\\config.default.js",
   "middleware": "F:\\mygit\\monitor\\config\\config.default.js",
@@ -101,7 +105,7 @@
     "cookieMaxAge": "F:\\mygit\\monitor\\node_modules\\egg-i18n\\config\\config.default.js"
   },
   "watcher": {
-    "type": "F:\\mygit\\monitor\\node_modules\\egg-watcher\\config\\config.default.js",
+    "type": "F:\\mygit\\monitor\\node_modules\\egg-watcher\\config\\config.local.js",
     "eventSources": {
       "default": "F:\\mygit\\monitor\\node_modules\\egg-watcher\\config\\config.default.js",
       "development": "F:\\mygit\\monitor\\node_modules\\egg-watcher\\config\\config.default.js"
@@ -132,18 +136,25 @@
       "cron": "F:\\mygit\\monitor\\node_modules\\egg-multipart\\config\\config.default.js"
     }
   },
+  "development": {
+    "watchDirs": "F:\\mygit\\monitor\\node_modules\\egg-development\\config\\config.default.js",
+    "ignoreDirs": "F:\\mygit\\monitor\\node_modules\\egg-development\\config\\config.default.js",
+    "fastReady": "F:\\mygit\\monitor\\node_modules\\egg-development\\config\\config.default.js",
+    "reloadOnDebug": "F:\\mygit\\monitor\\node_modules\\egg-development\\config\\config.default.js",
+    "overrideDefault": "F:\\mygit\\monitor\\node_modules\\egg-development\\config\\config.default.js",
+    "overrideIgnore": "F:\\mygit\\monitor\\node_modules\\egg-development\\config\\config.default.js"
+  },
   "static": {
     "prefix": "F:\\mygit\\monitor\\node_modules\\egg-static\\config\\config.default.js",
     "dir": "F:\\mygit\\monitor\\node_modules\\egg-static\\config\\config.default.js",
     "dynamic": "F:\\mygit\\monitor\\node_modules\\egg-static\\config\\config.default.js",
     "preload": "F:\\mygit\\monitor\\node_modules\\egg-static\\config\\config.default.js",
-    "buffer": "F:\\mygit\\monitor\\node_modules\\egg-static\\config\\config.prod.js",
-    "maxFiles": "F:\\mygit\\monitor\\node_modules\\egg-static\\config\\config.default.js",
-    "maxAge": "F:\\mygit\\monitor\\node_modules\\egg-static\\config\\config.prod.js"
+    "buffer": "F:\\mygit\\monitor\\node_modules\\egg-static\\config\\config.default.js",
+    "maxFiles": "F:\\mygit\\monitor\\node_modules\\egg-static\\config\\config.default.js"
   },
   "view": {
     "root": "F:\\mygit\\monitor\\node_modules\\egg-view\\config\\config.default.js",
-    "cache": "F:\\mygit\\monitor\\node_modules\\egg-view\\config\\config.default.js",
+    "cache": "F:\\mygit\\monitor\\node_modules\\egg-view\\config\\config.local.js",
     "defaultExtension": "F:\\mygit\\monitor\\node_modules\\egg-view\\config\\config.default.js",
     "defaultViewEngine": "F:\\mygit\\monitor\\node_modules\\egg-view\\config\\config.default.js",
     "mapping": "F:\\mygit\\monitor\\node_modules\\egg-view\\config\\config.default.js"
