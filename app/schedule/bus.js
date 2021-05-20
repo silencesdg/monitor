@@ -1,7 +1,7 @@
 //用于自动发送log
 module.exports = {
   schedule: {
-    // interval: "60s",
+    interval: "60s",
     type: "all", // 指定所有的 worker 都需要执行
     disable: false,
   },

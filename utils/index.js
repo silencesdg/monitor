@@ -33,7 +33,7 @@ function timeToTimeDate(timeStr) {
     return d
 }
 
-export default {
+module.exports = {
   dateFormat,
   timeToTimeDate
 };
